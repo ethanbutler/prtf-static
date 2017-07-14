@@ -1,0 +1,10 @@
+header.header
+  nav.header-nav
+    ul.header-menu.header-primary
+      each item in menus.primary
+        li.header-item
+          a.header-link(href=item.href)= item.name
+    ul.header-menu.header-secondary
+      each item in menus.secondary
+        li.header-item
+          a.header-link(href=item.href)= item.name
